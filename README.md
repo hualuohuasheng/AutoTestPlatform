@@ -14,4 +14,5 @@
         DjangoEnv\Scripts\activate.bat [windows]
         等待终端窗口中命令最前方出现(DjangoEnv)，表示激活虚拟环境成功
     4、安装依赖环境: pip3 install -r requirements.txt
+    5、创建数据库: create database AutoTestPlatform default charset utf8;
 

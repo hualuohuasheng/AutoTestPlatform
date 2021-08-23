@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Projects</title>
+</head>
+<body>
+
+<table border="1" cellpadding="10" cellspacing="5">
+    <caption>项目描述</caption>
+    <tr>
+        <th>项目ID</th>
+        <th>项目名称</th>
+        <th>项目创建者</th>
+        <th>项目描述</th>
+        <th>创建时间</th>
+        <th>更新时间</th>
+        <th>编辑</th>
+    </tr>
+
+    <tbody>
+        {% for project in projects %}
+            <tr>
+                <td>{{ project.project_id }}</td>
+                <td>{{ project.project_name }}</td>
+                <td>{{ project.project_producer }}</td>
+                <td>{{ project.project_description }}</td>
+                <td>{{ project.create_time }}</td>
+                <td>{{ project.update_time }}</td>
+                <td><input type="submit" value="更新"></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

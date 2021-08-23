@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Project',
+    'ParameterRules',
     'ApiTest',
 ]
 
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'AutoTestPlatform.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "Templates", ],
+        'DIRS': [BASE_DIR / "templates", ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'AutoTestPlatform',
-        'USER': 'root',
+        'USER': 'django',
         'PASSWORD': 'test1234',
         'HOST': '127.0.0.1',
         "PORT": "3306"
